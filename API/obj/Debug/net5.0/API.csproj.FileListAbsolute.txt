@@ -54,3 +54,10 @@
 /Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Humanizer.dll
 /Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/Users/rogerpouncey/Desktop/Projects/DatingApp/API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
