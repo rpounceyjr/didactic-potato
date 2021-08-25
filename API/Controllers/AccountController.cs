@@ -50,7 +50,7 @@ namespace API.Controllers
         {
             var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.Username);
 
-            if (user == null) return UnauthorizedObjectResult("Invalid Username");
+            if (user == null) return BadRequest("Invalid Username");
 
             using var hmac = new HMACSHA512(user.PasswordSalt);
 
@@ -58,7 +58,7 @@ namespace API.Controllers
 
             for (int i = 0; i < computedHash.Length; i++)
             {
-                if (computedHash[i] != user.PasswordHash[i]) return UnauthorizedObjectResult("Invalid Password");
+                if (computedHash[i] != user.PasswordHash[i]) return BadRequest("Invalid Password");
             }
 
             return new UserDto
@@ -66,16 +66,6 @@ namespace API.Controllers
                 Username = user.UserName,
                 Token = _tokenService.CreateToken(user)
             };
-        }
-
-        private ActionResult<UserDto> UnauthorizedObjectResult(string v)
-        {
-            throw new NotImplementedException(v);
-        }
-
-        private ActionResult<UserDto> BadRequest(string v)
-        {
-            throw new NotImplementedException(v);
         }
 
         private async Task<bool> UserExists(string username)
